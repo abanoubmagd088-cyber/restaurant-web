@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #05060d;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  .font-serif {
+    font-family: 'Cormorant Garamond', 'Georgia', serif;
+  }
+}
+
+@layer components {
+  .ambient-slider {
+    accent-color: rgb(165 243 252);
+  }
+  .ambient-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 9999px;
+    background: rgb(165 243 252);
+    box-shadow: 0 0 12px rgba(165, 243, 252, 0.6);
+    cursor: pointer;
+  }
+  .ambient-slider::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-radius: 9999px;
+    background: rgb(165 243 252);
+    box-shadow: 0 0 12px rgba(165, 243, 252, 0.6);
+    cursor: pointer;
+  }
+}
